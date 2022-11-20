@@ -24,13 +24,7 @@ In this task we have 3 sections:
 ```sh
 pip install -r requirements.txt
 ```
-3- Clone and run the app:
-
-```sh
-git clone https://github.com/SewarDarawshe/DockerFinalTask.git
-
-python ./main.py
-```
+use : "docker compose up -d"
 
 now you can access the app using : http://localhost:8085/  .
 
