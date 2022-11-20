@@ -15,7 +15,7 @@ In this task we have 3 sections:
 >This is a flask App that requires flask and requests packages to be installed.
 
 
-
+https://user-images.githubusercontent.com/72957443/202928101-d5795b28-71e6-4194-b8c1-3899e56f405b.png
 
 ## Run the app
 1-install python 3.10. 
