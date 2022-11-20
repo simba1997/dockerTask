@@ -57,35 +57,10 @@ COPY . .
 ```
  Expose the port of the flask app: 
 ```sh
-EXPOSE 3000
+EXPOSE 5000
 ```
  Run: 
 ```sh
-CMD [ "python", "./main.py" ]
+CMD [ "flask", "run" ]
 ```
-
-> In order to successfully push the generated Docker image to
-Docker Hub using Jenkins, a repository was created in the Docker hub :
-<img width="1017" alt="11" src="https://user-images.githubusercontent.com/72957443/202928319-0c89f2ff-04e9-49ad-b993-792d6a39c11a.png">
-
-
-
-
-
-## ✨Jenkinsfile & Dockerhub :
-
->Docker must be installed on the Jenkins server, for more info use this link : https://docs.docker.com/engine/install/ubuntu/
-
->you must also link and add your Docker credentials in Jenkins.
-(your dockerhub username and one of the  Access Tokens as password).
-
-This is a Master job pipeline, that clones my repository from Github, builds an image, and pushes it to the douckerhub.
-
-
-## 
-##
-
-
-
-
 
