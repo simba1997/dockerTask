@@ -66,7 +66,7 @@ CMD [ "python", "./main.py" ]
 
 > In order to successfully push the generated Docker image to
 Docker Hub using Jenkins, a repository was created in the Docker hub :
-https://hub.docker.com/repository/docker/sewardrawshe/dockerfinaltask
+<img width="1017" alt="11" src="https://user-images.githubusercontent.com/72957443/202928319-0c89f2ff-04e9-49ad-b993-792d6a39c11a.png">
 
 
 
