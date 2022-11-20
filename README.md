@@ -63,4 +63,4 @@ EXPOSE 5000
 ```sh
 CMD [ "flask", "run" ]
 ```
-
+<img width="1017" alt="11" src="https://user-images.githubusercontent.com/72957443/202928319-0c89f2ff-04e9-49ad-b993-792d6a39c11a.png">
