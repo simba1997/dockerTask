@@ -32,9 +32,9 @@ git clone https://github.com/SewarDarawshe/DockerFinalTask.git
 python ./main.py
 ```
 
-now you can access the app using : http://localhost:3000/  .
+now you can access the app using : http://localhost:8085/  .
 
-![Screenshot]
+
 
 
 
