@@ -18,43 +18,11 @@ In this task we have 3 sections:
 <img width="763" alt="113" src="https://user-images.githubusercontent.com/72957443/202928441-9d3651dc-4512-4fd5-ad2c-f45ffb4ab2b3.png">
 
 ## Run the app
-1-install python 3.10. 
 
-2-install the requirements 
-```sh
-pip install -r requirements.txt
-```
 use : "docker compose up -d"
 
 now you can access the app using : http://localhost:8085/  .
 
 
-
-
-
-## ✨Dockerize the applications:
- import python: 
-```sh
-FROM python:3.10.0-alpine3.13
-```
- copy the requirements.txt: 
-```sh
-COPY ./requirements.txt requirements.txt
-```
-install the required packages:
-```sh
-RUN pip install -r requirements.txt
-```
- Copy: lets us copy a file (or files) from the host system into the image: 
-```sh
-COPY . .
-```
- Expose the port of the flask app: 
-```sh
-EXPOSE 5000
-```
- Run: 
-```sh
-CMD [ "flask", "run" ]
 ```
 <img width="1017" alt="11" src="https://user-images.githubusercontent.com/72957443/202928319-0c89f2ff-04e9-49ad-b993-792d6a39c11a.png">
