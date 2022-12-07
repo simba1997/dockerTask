@@ -1,0 +1,40 @@
+pipeline {
+
+  agent any
+  
+  stages {
+      stage('Git Clone') {
+            steps {
+                git url:"https://github.com/simba1997/dockerTask.git", branch:'main'
+            }
+        }
+              stage('build') {
+            steps {
+                sh 'cd Task3 && cd venv && docker build -t bitcoin_app:$BUILD_NUMBER .'
+            }
+        }
+        
+    stage('Build Docker') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+     stage('Build Tag') {
+        steps{
+            sh 'docker tag bitcoin_app:$BUILD_NUMBER simba1997/new-docker:$BUILD_NUMBER'
+        }
+         
+     }
+
+    stage('Push Docker') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'username')]) {
+                    sh 'docker login -u ${username} -p ${pass} && docker push simba1997/new-docker:$BUILD_NUMBER'
+                 
+                }
+            }
+        }
+    }
+
+    
+}
