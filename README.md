@@ -23,6 +23,4 @@ use : "docker compose up -d"
 
 now you can access the app using : http://localhost:8085/  .
 
-
-```
 <img width="1017" alt="11" src="https://user-images.githubusercontent.com/72957443/202928319-0c89f2ff-04e9-49ad-b993-792d6a39c11a.png">
