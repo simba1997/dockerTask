@@ -8,17 +8,12 @@ pipeline {
                 git url:"https://github.com/simba1997/dockerTask.git", branch:'main'
             }
         }
-              stage('build') {
+              stage('Docker build') {
             steps {
                 sh 'cd Task3 && cd venv && docker build -t bitcoin_app:$BUILD_NUMBER .'
             }
         }
         
-    stage('Build Docker') {
-      steps {
-        sh 'ls -la'
-      }
-    }
      stage('Build Tag') {
         steps{
             sh 'docker tag bitcoin_app:$BUILD_NUMBER simba1997/new-docker:$BUILD_NUMBER'
