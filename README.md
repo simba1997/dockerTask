@@ -24,6 +24,6 @@ now you can access the app using : http://localhost:8085/
 
 Build with jenkins: 
 
-![dockerim](https://user-images.githubusercontent.com/72957443/206309322-79e47650-dc87-489f-9ae4-5d2e193ca67a.jpeg)
+![image](https://user-images.githubusercontent.com/72957443/206311235-4859ef1a-b376-4f82-99e4-1f1e24217f98.png)
 
 
